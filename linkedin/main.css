@@ -1,0 +1,114 @@
+/* Body */
+
+/* Nav Bar */
+header{
+    background-color: white;
+    height: 50px;
+}
+header .nav{
+    padding-left: 120px;
+    padding-right: 150px;
+    color: #00000099;
+}
+header .nav .flex{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.logo input{
+    height: 35px;
+    margin-left: 10px;
+    padding-right: 150px;
+    margin-right: 120px;
+    background-color: #dbdbdb99;
+    border: none;
+}
+header .nav .pad{
+    padding-top: 15px;
+}
+
+/* Main Page */
+main{
+    background-color: rgb(240, 240, 240);
+    height: 1000px;
+}
+main .grid{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 2.5fr 1fr;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right:150px
+}
+main .grid .one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+main .grid .two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Left Half */
+main .grid .profile{
+    background-color: white;
+    height: 420px;
+    border-radius: 20px;
+
+    border-color: #dbdbdb99;
+    border-style: solid;
+    border-width: thin;
+}
+main .grid .skill{
+    background-color: salmon;
+    height: 220px;
+
+    border-radius: 20px;
+    border-color: #dbdbdb99;
+    border-style: solid;
+    border-width: thin;
+}
+
+/* Right Half */
+main .grid .edit{
+    background-color: white;
+    height: 120px;
+
+    border-radius: 20px;
+    border-color: #dbdbdb99;
+    border-style: solid;
+    border-width: thin;
+
+    display: flex;
+    flex-direction: column;
+}
+main .grid .edit div{
+    flex: 1;
+    padding: 20px;
+}
+main .grid .edit .top{
+    border-bottom-style: solid;
+    border-bottom-color: #dbdbdb99;
+}
+
+main .grid .promoted{
+    background-color: pink;
+    height: 230px;
+
+    border-radius: 20px;
+    border-color: #dbdbdb99;
+    border-style: solid;
+    border-width: thin;
+
+}
+main .grid .viewed{
+    background-color: violet;
+    height: 280px;
+
+    border-radius: 20px;
+    border-color: #dbdbdb99;
+    border-style: solid;
+    border-width: thin;
+}

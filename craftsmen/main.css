@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+    color: white;
+}
+/******************************/
+header .title{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+header .title h1 {
+    font-size: xxx-large;
+}
+header .title h3 {
+    margin-bottom: -50px;
+    margin-left: -105px;
+}
+/******************************/
+main {
+    font-family: "Satoshi-Variable","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: x-large;
+}
+main .flex{
+    display: flex;
+    height: 400px;
+    gap: 10px;
+}
+main .flex .one{
+    background-color: #2900e8;
+    flex: .5;
+    border-radius: 70px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+    transition: all .3s ease-in-out;
+}
+main .flex .two{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas:
+        "work about"
+        "contact contact";
+    gap: 5px;
+    flex: .5;
+    border-radius: 70px;
+}
+main .flex .two .work{
+    background-color: #fff;
+    grid-area: work;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 70px;
+    padding: 50px;
+    transition: all .3s ease-in-out;
+}
+main .flex .two .about{
+    background-color: #1B1B1F;
+    grid-area: about;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 70px;
+    padding: 50px;
+    transition: all .3s ease-in-out;
+}
+main .flex .two .contact{
+    background-color: #FFF480;
+    grid-area: contact;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 70px;
+    padding: 50px;
+    transition: all .3s ease-in-out;
+}
+main .flex .one:hover{
+    transform: scale(0.95);
+}
+main .flex .two .work:hover{
+    transform: scale(0.95);
+}
+main .flex .two .about:hover{
+    transform: scale(0.95);
+    
+}
+main .flex .two .contact:hover{
+    transform: scale(0.95);
+}
+a{
+    text-decoration: none;
+}
