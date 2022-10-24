@@ -1,0 +1,53 @@
+/* Website PlayGround */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Header */
+header h1 {
+    padding-left: 30px;
+    font-weight:500;
+}
+/* Main Body */ 
+main {
+    padding-left:200px;
+    padding-right:200px;
+}
+main h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Grid */
+ol {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+}
+a {
+    border-style: solid;
+    border-width: medium;
+    border-radius: 10px;
+    border-color: lightblue;
+    transition: all .3s ease-in-out;
+}
+a:hover{
+    transform: scale(0.95);
+}
+
+/* Website Background Images */
+.craftsmen{
+    background: url(./media/craftsmen_img.png);
+    background-size: cover;
+}
+.tatte{
+    background: url(./media/tatte_img.png);
+    background-size: cover;
+}
+.linkedin{
+    background: url(./media/linkedin_img.png);
+    background-size: cover;
+}
+
+
