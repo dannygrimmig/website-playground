@@ -49,5 +49,17 @@ a:hover{
     background: url(./media/linkedin_img.png);
     background-size: cover;
 }
+.youtube{
+    background: url(./media/youtube_img.png);
+    background-size: cover;
+}
+.spotify{
+    background: url(./media/spotify_img.png);
+    background-size: cover;
+}
+.instagram{
+    background: url(./media/instagram_img.png);
+    background-size: cover;
+}
 
 
