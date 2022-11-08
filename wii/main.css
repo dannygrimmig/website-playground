@@ -1,0 +1,18 @@
+body .grid{
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+main .grid div{
+    background-color: steelblue;
+    height: 200px;
+    border-radius: 100px;
+    transition: all 3s;
+}
+
+main .grid div:hover{
+    transform: rotate(720deg) scale(1.2);
+    background-color: skyblue;
+}

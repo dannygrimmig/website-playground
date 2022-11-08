@@ -61,5 +61,9 @@ a:hover{
     background: url(./media/instagram_img.png);
     background-size: cover;
 }
+.wii{
+    background: url(./media/wii_img.png);
+    background-size: cover;
+}
 
 
