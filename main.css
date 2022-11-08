@@ -64,5 +64,9 @@ a:hover{
     background: url(./media/wii_img.png);
     background-size: cover;
 }
+.america{
+    background: url(./media/america_img.png);
+    background-size: cover;
+}
 
 

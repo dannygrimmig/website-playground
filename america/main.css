@@ -1,0 +1,46 @@
+.flag{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: repeat(6, 100px);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    gap: 10px;
+    background-color: wheat;
+}
+.flag div{
+    border-radius: 10px;
+    transition: all 1s;
+}
+.flag div:hover{
+    transform: scale(1.1);
+}
+.flag .stars{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: steelblue;
+}
+.flag .s1{
+    grid-column: 2/-1;
+    background-color: indianred;
+}
+.flag .s2{
+    grid-column: 2/-1;
+    background-color: white;
+}
+.flag .s3{
+    grid-column: 2/-1;
+    background-color: indianred;
+}
+.flag .s4{
+    grid-column: 1/-1;
+    background-color: white;
+}
+.flag .s5{
+    grid-column: 1/-1;
+    background-color: indianred;
+}
+.flag .s6{
+    grid-column: 1/-1;
+    background-color: white;
+}
