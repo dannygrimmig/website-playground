@@ -1,0 +1,23 @@
+/* All */
+
+/* Nav Bar */
+header{
+    height: 30px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header .left{
+    background-color: indianred;
+}
+
+header .middle input{
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+}
+header .right{
+    background-color: lightcoral;
+}
