@@ -13,11 +13,37 @@ header .left{
     background-color: indianred;
 }
 
-header .middle input{
+.searchbar{
     width: 500px;
     height: 30px;
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
+    border-color: gray;
+    padding-left: 10px;
+    font-size: large;
+}
+.searchicon{
+    height: 35px;
+    border-radius: 0 50px 50px 0;
+    margin-top: -10px;
 }
 header .right{
     background-color: lightcoral;
+}
+/* main section */
+main{
+    display: flex;
+}
+main .side{
+    background-color: wheat;
+    flex: .25fr;
+}
+main .grid .content{
+    background-color: indianred;
+    flex: 1fr;
+    display: grid;
+
+}
+.content li{
+    height: 200px;
+    width: 200px;
 }
