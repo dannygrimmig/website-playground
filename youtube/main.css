@@ -97,13 +97,15 @@ main .content ul{
 main .content li{
     display: flex;
     flex-direction: column;
+    transition: all .5s;
 }
-.thumbnail{
+main .content li:hover{
+    transform: scale(1.2);
+}
+iframe{
     flex: 3;
     height: fit-content;
     border-radius: 20px;
-
-    background-color: indianred;
 }
 .description{
     flex: 2;
