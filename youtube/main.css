@@ -7,9 +7,13 @@ header{
     height: 56px;
     padding: 0 15px 0 15px;
     margin-top: -10px;
+    margin-left: -8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 98%;
+    background-color: white;
 
 }
 /* left */
@@ -56,24 +60,32 @@ header .right{
 
 /* Main */
 main{
-    padding-top: 10px;
+    padding-top: 50px;
     display: flex;
     gap: 10px;
 }
 /* side */
+
 main .sidebar{
     padding: 10px;
-    flex: 1;
+    width: 20%;
+    height: 100%;
     font-weight: lighter;
+    position: fixed;
+
+
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
 main .sidebar ul{
     list-style: none;
     border-bottom-style: solid;
     border-width: thin;
-    border-color: rgb(216, 216, 216);;;
+    border-color: rgb(216, 216, 216);
+    margin: 10px 0 10px 0;
 }
 main .sidebar li{
-    margin-top: 15px;
     margin-bottom: 15px;
 }
 main .sidebar p{
@@ -84,7 +96,8 @@ main .sidebar p{
 /* content */
 main .content{
     padding: 10px;
-    flex: 5;
+    width: 80%;
+    margin-left: 20%;
 }
 main .content ul{
     list-style: none;
