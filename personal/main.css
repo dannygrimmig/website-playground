@@ -64,3 +64,29 @@ body{
     background-color: aliceblue;
     border-radius: 100%;
 }
+
+/* Mobile */
+/* Portrait */
+@media only screen and (max-device-width: 812px) {
+    .grid ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid ul li{
+        height: 150px;
+    }
+    .danny{
+        margin-top: -50px;
+    }
+    .socials{
+        margin-top: -30px;
+    }
+    .socials li{
+        padding: 8px;
+    }
+    .grid ul .me{
+        background-image: url(./media/profilephone.png);
+        background-position: bottom;
+    }
+
+}
