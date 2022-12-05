@@ -31,7 +31,6 @@ body{
 .grid ul .edu{ /* education & experience */
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Memorial_Chapel_at_Colgate_University.jpg");
     background-size: cover;
-    background-position: center;
 }
 .grid ul .proj{
     background-image: url(./media/utahtrees.png);
