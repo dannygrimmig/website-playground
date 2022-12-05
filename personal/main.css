@@ -2,7 +2,6 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
 /* Grid */
 .grid ul{ /* grid container */
     padding: 20px;
@@ -14,7 +13,7 @@ body{
 
     list-style: none;
 }
-.grid ul li{ /* grid items */
+.grid ul a{ /* grid items */
     border-radius: 50px;
 
     display: flex;
@@ -22,6 +21,7 @@ body{
     align-items: center;
     font-size: x-large;
     color: transparent;
+    text-decoration: none;
 
 }
 .grid ul .me{ /* about me */
@@ -35,9 +35,8 @@ body{
 .grid ul .proj{
     background-image: url(./media/utahtrees.png);
     background-size: cover;
-    grid-column-end: -1;
 }
-.grid ul li:hover{ /* item hover actions */
+.grid ul a:hover{ /* item hover actions */
     color: steelblue;
     background-image: none;
     background-color: aliceblue;
@@ -52,9 +51,16 @@ body{
 /* Social Medias */
 .socials ul{
     padding: 0;
+    margin-top: -20px;
     list-style: none;
 
     display: flex;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 60px;
+}
+.socials li{
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 100%;
 }
