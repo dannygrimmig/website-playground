@@ -69,5 +69,8 @@ a:hover{
     background: url(./media/america_img.png);
     background-size: cover;
 }
+.personal{
+    background-color: indianred;
+}
 
 

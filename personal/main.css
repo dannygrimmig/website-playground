@@ -1,0 +1,60 @@
+/* All */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Grid */
+.grid ul{ /* grid container */
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 500px;
+    gap: 20px;
+
+    list-style: none;
+}
+.grid ul li{ /* grid items */
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: transparent;
+
+}
+.grid ul .me{ /* about me */
+    background-image: url(./media/profilegolfing.png);
+    background-size: cover;
+}
+.grid ul .edu{ /* education & experience */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Memorial_Chapel_at_Colgate_University.jpg");
+    background-size: cover;
+}
+.grid ul .proj{
+    background-image: url(./media/utahtrees.png);
+    background-size: cover;
+    grid-column-end: -1;
+}
+.grid ul li:hover{ /* item hover actions */
+    color: steelblue;
+    background-image: none;
+    background-color: aliceblue;
+}
+
+/* Danny Grimmig */
+.danny{
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* Social Medias */
+.socials ul{
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
