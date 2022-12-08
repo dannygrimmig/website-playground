@@ -1,0 +1,59 @@
+body{
+    color: black;
+    font-family: sans-serif;
+}
+main{
+    padding: 25px;
+}
+.spotify{
+    display: flex;
+    border-radius: 25px;
+}
+#artist{
+    padding: 25px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#artist h1{
+    font-weight: lighter;
+}
+#artist img{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+}
+.trackDiv{
+    padding: 25px;
+    flex: 2;
+
+    display: flex;
+    align-items: center;
+}
+#tracks{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+    row-gap: 25px;
+}
+#tracks li{
+    font-weight: lighter;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+
+}
+#tracks img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+footer{
+    padding: 0 25px 15px 25px;
+    display: flex;
+    justify-content: center;
+}
