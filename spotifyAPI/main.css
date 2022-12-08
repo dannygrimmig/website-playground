@@ -52,8 +52,13 @@ main{
     height: 150px;
     border-radius: 5px;
 }
-footer{
-    padding: 0 25px 15px 25px;
+.form{
+    padding: 0 25px 0 25px;
     display: flex;
     justify-content: center;
+}
+footer{
+    margin-top: -20px;
+    text-align: center;
+    font-weight: lighter;
 }
