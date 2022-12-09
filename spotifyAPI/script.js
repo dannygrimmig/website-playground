@@ -43,6 +43,7 @@ fetch(searchURL, otherParams)
         let name = artists[0].name;
         let artistId = artists[0].id; 
         let image = artists[0].images[0].url; 
+        
 
         //update HTML
         let grabCharContainer = document.querySelector("#artist");
@@ -77,16 +78,45 @@ fetch(searchURL, otherParams)
                         //grab info from tracks
                         let currTrack = tracks[i].name;
                         let albumImg = tracks[i].album.images[0].url;
+                        let preview = tracks[i].preview_url;
+                        console.log(preview);
 
                         //update HTML
-                        let createliTag = document.createElement("li");
-                        let createAlbImg = document.createElement("img");
+                        let createLi = document.createElement("li");
 
-                        createliTag.innerHTML = currTrack;
-                        createAlbImg.src = albumImg;
+                        let createTrackP = document.createElement("p");
+                        let createAlbumImage = document.createElement("img");
+                        let createAudioTag = document.createElement("audio");
+                        let createSourceTag = document.createElement("source");
 
-                        grabCharContainer.appendChild(createAlbImg);
-                        grabCharContainer.appendChild(createliTag);
+                        createTrackP.innerHTML = currTrack;
+                        createAlbumImage.src = albumImg;
+                        createSourceTag.src = preview;
+                        createAudioTag.controls = "controls";
+                        createAudioTag.appendChild(createSourceTag);
+
+                        createLi.appendChild(createAlbumImage);
+                        createLi.appendChild(createTrackP);
+                        createLi.appendChild(createAudioTag);
+
+                        grabCharContainer.appendChild(createLi);
+
+
+                        // let createliTag = document.createElement("li");
+                        // let createAlbImg = document.createElement("img");
+                        // let createAudTag = document.createElement("audio");
+                        // let createAudSrc = document.createElement("source");
+
+                        // createliTag.innerHTML = currTrack;
+                        // createAlbImg.src = albumImg;
+                        // createAudTag.controls = 'controls';
+                        // createAudSrc.src = preview; 
+                        // createAudTag.appendChild(createAudSrc);
+                        // console.log(createAudTag);
+
+                        // grabCharContainer.appendChild(createAlbImg);
+                        // grabCharContainer.appendChild(createliTag);
+                        // grabCharContainer.appendChild(createAudTag);
                 }
             })
     })

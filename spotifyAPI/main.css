@@ -2,15 +2,12 @@ body{
     color: black;
     font-family: sans-serif;
 }
-main{
-    padding: 25px;
-}
 .spotify{
     display: flex;
     border-radius: 25px;
 }
 #artist{
-    padding: 25px;
+    padding: 0 25px 25px 25px;
     flex: 1;
 
     display: flex;
@@ -20,37 +17,41 @@ main{
 }
 #artist h1{
     font-weight: lighter;
+    padding-top: 0;
 }
 #artist img{
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 550px;
     border-radius: 5px;
 }
 .trackDiv{
-    padding: 25px;
+    padding: 75px 25px 0px 25px;
     flex: 2;
-
-    display: flex;
-    align-items: center;
 }
 #tracks{
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
-    row-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0;
 }
 #tracks li{
-    font-weight: lighter;
     padding: 10px;
-    
     display: flex;
+    flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
-#tracks img{
+#tracks li img{
     width: 150px;
     height: 150px;
     border-radius: 5px;
+}
+#tracks li p{
+    font-weight: lighter;
+}
+#tracks li audio{
+    width: 250px;
 }
 .form{
     padding: 0 25px 0 25px;
@@ -58,7 +59,7 @@ main{
     justify-content: center;
 }
 footer{
-    margin-top: -20px;
+    margin-top: -10px;
     text-align: center;
     font-weight: lighter;
 }
