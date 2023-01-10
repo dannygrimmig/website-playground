@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* HEADER */
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    height: 60px;
+
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+header .left{
+    flex: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bolder;
+    font-size: 25px;
+
+    border-right-style: solid;
+    border-right-width: thin;
+}
+header .center{
+    flex: 10;
+    
+    display: flex;
+    align-items: center;
+}
+header .center ul{
+
+    width: 75%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 0 25px 0 25px;
+}
+header .right{
+    flex: 3;
+
+    display: flex;
+    align-items: center;
+}
+header .right ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 0 10px 0 10px;
+}
+header .right ul li{
+    height: 40px;
+    width: 85px;
+
+    border-style: solid;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 12px;
+}
+header .right ul .signUp{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+/* MAIN PAGE */
+main{
+    margin-top: 60px;
+}
