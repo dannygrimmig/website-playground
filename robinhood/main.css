@@ -180,32 +180,43 @@ main .cardFlips .cards ul{
     grid-template-columns: 1fr 1fr 1fr;
 }
 main .cardFlips .cards ul li{
-    background-color: white;
     border-radius: 25px;
     margin: 10px;
     height: 500px;
 
-    padding: 15px;
-    display: flex;
-    justify-content: end;
 
-    transition: all .8s;
-}
-main .cardFlips .cards ul li:hover{
-    transform: rotateY(180deg);
-}
+    background-color: transparent;
+    perspective: 1000px;
 
-main .cardFlips .cards ul li .inner{
-    background-color: indianred;
-    padding: 0;
-    margin: 0;
+}
+.inner{
     width: 100%;
     height: 100%;
-}
-main .cardFlips .cards ul li .front{
-    background-color: lightblue;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+
+    text-align: center;
+    border-radius: 25px;
 }
-main .cardFlips .cards ul li .back{
-    background-color: navy;
+
+main .cardFlips .cards ul li:hover .inner{
+    transform: rotateY(180deg);
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 25px;
+}
+.front{
+    background-color: white;
+}
+.back{
+    background-color: darkgreen;
+    color: white;
+    transform: rotateY(180deg);
 }
