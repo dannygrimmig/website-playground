@@ -121,6 +121,7 @@ main .landing .bottom{
 
 main .sideScroll{
     background-color: rgb(233, 233, 233);
+    margin-bottom: 0;
     height: 600px;
 
     border-bottom-style: solid;
@@ -152,4 +153,59 @@ main .sideScroll .scrolling .card .upper{
     background-color: rgb(0, 51, 0);
     border-radius: 25px 25px 0 0;
     height: 200px;
+}
+
+main .cardFlips{
+    background-color: rgb(2, 202, 2);
+    margin-top: 0;
+    padding: 50px;
+}
+
+main .cardFlips .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+main .cardFlips .cards{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+main .cardFlips .cards ul{
+    padding: 0 200px 0 200px 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main .cardFlips .cards ul li{
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+    height: 500px;
+
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+
+    transition: all .8s;
+}
+main .cardFlips .cards ul li:hover{
+    transform: rotateY(180deg);
+}
+
+main .cardFlips .cards ul li .inner{
+    background-color: indianred;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+main .cardFlips .cards ul li .front{
+    background-color: lightblue;
+
+}
+main .cardFlips .cards ul li .back{
+    background-color: navy;
 }
