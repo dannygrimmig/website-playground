@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 100%;
+}
+.shipping{
+    background-color: rgb(28,27,27);
+    width: 100%;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.nav{
+    background-color: whitesmoke;
+    border-bottom: 1px solid black;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    padding: 10px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.nav.transparent{
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+}
+.nav .chunk{
+    padding: 10px;
+    width: 250px;
+}
+.nav .chunk.left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav .chunk.center{
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/Logo_Transparent_2_150x@2x.png?v=1675103754");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav .chunk.center.transparent{
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/Logo_Transparent_White_2_150x@2x.png?v=1675103768");
+}
+.nav .chunk.right{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+}
+.nav .chunk.right img{
+    height: 25px;
+    width: 525x;
+}
+
+.hero{
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/ATL.Meeup.Group.Overhead_1800x.jpg?v=1680637769");
+    background-position: center;
+    background-size: cover;
+    margin: -120px 0 0 0;
+    height: 640px;
+
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+    font-size: 40px;
+}
+.hero p{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px;
+    transition: all 0.5s;
+}
+.hero p:hover{
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.community{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.community .text{
+    width: 500px;
+    text-align: center;
+}
+.community .text h1{
+    padding: 20px;
+}
+.community .text p{
+    padding: 10px;
+}
+
+.shopGrid{
+    background-color: gray;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.shopGrid .chunk{
+    flex: 2;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+
+    transition: all 0.25s;
+}
+.shopGrid .chunk:hover{
+    flex: 3;
+}
+.shopGrid .chunk.left{
+    background-color: lightgray;
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/home_apparel2_750x960_crop_center.jpg?v=1669181462");
+    background-position: center;
+    background-size: cover;
+
+}
+.shopGrid .chunk.center{
+    background-color: gray;
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/home_acc2_750x960_crop_center.jpg?v=1669181763");
+    background-position: center;
+    background-size: cover;
+}
+.shopGrid .chunk.right{
+    background-color: steelblue;
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/home_hats4_750x960_crop_center.jpg?v=1669181386");
+    background-position: center;
+    background-size: cover;
+}
