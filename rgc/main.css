@@ -63,6 +63,9 @@ body{
     height: 25px;
     width: 525x;
 }
+.nav .chunk.right.transparent{
+    filter: invert(1);
+}
 
 .hero{
     background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/ATL.Meeup.Group.Overhead_1800x.jpg?v=1680637769");

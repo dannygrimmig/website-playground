@@ -7,12 +7,12 @@ window.addEventListener('scroll', () => {
     if(y >= 40){
         nav.className="nav";
         navCenter.className="chunk center";
-        navright.style.filter = "";
+        navright.className="chunk right"
         
     }
     else{
         nav.className="nav transparent";
         navCenter.className="chunk center transparent";
-        navright.style.filter = "invert(1)";
+        navright.className = "chunk right transparent";
     }
   });
