@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-}
 body{
     font-family: 'PT Sans Narrow', sans-serif;
     width: 100%;
@@ -12,7 +9,7 @@ body{
 .shipping{
     background-color: rgb(28,27,27);
     width: 100%;
-    color: whitesmoke;
+    color: white;
     text-transform: uppercase;
     font-size: 16px;
     display: flex;
@@ -23,10 +20,11 @@ body{
 .nav{
     background-color: whitesmoke;
     border-bottom: 1px solid black;
-    height: 100px;
+    height: 50px;
     position: sticky;
     top: 0;
     padding: 10px 50px;
+    margin-top: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -34,8 +32,8 @@ body{
 }
 .nav.transparent{
     background-color: transparent;
-    border: none;
-    color: whitesmoke;
+    border-bottom: 1px solid black;
+    color: black;
 }
 .nav .chunk{
     padding: 10px;
@@ -51,13 +49,13 @@ body{
     cursor: pointer;
 }
 .nav .chunk.center{
-    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/Logo_Transparent_2_150x@2x.png?v=1675103754");
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/web.logo.script.black_150x@2x.png?v=1674193189");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .nav .chunk.center.transparent{
-    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/Logo_Transparent_White_2_150x@2x.png?v=1675103768");
+    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/web.logo.script.black_150x@2x.png?v=1674193189");
 }
 .nav .chunk.right{
     display: flex;
@@ -70,18 +68,14 @@ body{
     width: 525x;
     cursor: pointer;
 }
-.nav .chunk.right.transparent{
-    filter: invert(1);
-}
 
 .hero{
-    background-image: url("https://cdn.shopify.com/s/files/1/0024/4350/9869/files/ATL.Meeup.Group.Overhead_1800x.jpg?v=1680637769");
+    background-color: whitesmoke;
     background-position: center;
     background-size: cover;
-    margin: -120px 0 0 0;
-    height: 640px;
+    height: 200px;
 
-    color: whitesmoke;
+    color: black;
     text-transform: uppercase;
     font-weight: lighter;
 
@@ -91,24 +85,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 .hero h1{
     font-size: 40px;
 }
 .hero p{
-    background-color: whitesmoke;
-    border: 1px solid black;
     color: black;
     font-size: 16px;
     font-weight: bold;
     padding: 15px 40px;
     transition: all 0.5s;
     cursor: pointer;
-}
-.hero p:hover{
-    background-color: transparent;
-    border: 1px solid whitesmoke;
-    color: whitesmoke;
 }
 
 .community{
