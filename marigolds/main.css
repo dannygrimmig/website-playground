@@ -1,0 +1,32 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.nav{
+    background-color: orange;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav .left{
+    background-color: green;
+    flex: 1;
+}
+.nav .left ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .center{
+    flex: 1;
+}
+
+.nav .right{
+    flex: 1;
+}
