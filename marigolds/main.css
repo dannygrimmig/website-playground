@@ -5,28 +5,76 @@
 }
 body{
     font-family: 'Quicksand', sans-serif;
+    background-color: white;
 }
 .nav{
-    background-color: orange;
+    background-color: white;
 
     display: flex;
     justify-content: space-around;
+
+    border-bottom: 1px solid black;
+
+    top: 0;
+    position: sticky;
+    width: 100%;
 }
 
 .nav .left{
-    background-color: green;
-    flex: 1;
+    background-color: transparent;
+    flex: 2;
 }
 .nav .left ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav .left li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: orange;
 }
 
 .nav .center{
+    background-color: transparent;
     flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.nav .center:hover{
+    cursor: pointer;
 }
 
 .nav .right{
-    flex: 1;
+    background-color: transparent;
+    flex: 2;
+}
+.nav .right ul{
+    list-style: none;
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+}
+.nav .right li{
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.nav .right li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.hero{
+    height: 650px;
+    background-color: orange;
+    background-image: url("https://static.wixstatic.com/media/e9d748_c3884a2329ae4feb8e9f6f0dd1525ded~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_872,h_628,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_2546_JPG.jpg");
+    background-position: center;
+    background-size: cover;
 }
