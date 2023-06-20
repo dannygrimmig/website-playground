@@ -3,6 +3,10 @@
     padding: 0px;
     margin: 0px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 body{
     font-family: 'Quicksand', sans-serif;
     background-color: white;
@@ -13,11 +17,12 @@ body{
     display: flex;
     justify-content: space-around;
 
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 
     top: 0;
     position: sticky;
     width: 100%;
+    z-index: 1;
 }
 
 .nav .left{
@@ -42,9 +47,6 @@ body{
     flex: 1;
     display: flex;
     justify-content: center;
-}
-.nav .center:hover{
-    cursor: pointer;
 }
 
 .nav .right{
@@ -71,10 +73,110 @@ body{
     border: 1px solid orange;
 }
 
+/* HERO */
 .hero{
-    height: 650px;
-    background-color: orange;
-    background-image: url("https://static.wixstatic.com/media/e9d748_c3884a2329ae4feb8e9f6f0dd1525ded~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_872,h_628,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/IMG_2546_JPG.jpg");
+    padding: 25px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}
+/* Hero Containers */
+.hero .herodiv{
+    flex: 1;
+    height: 600px;
+    background-color: gray;
+    min-width: 400px;
+
+    transition: all 0.5s;
+}
+.hero .herodiv:hover{
+    cursor: pointer;
+    transform: scale(.98);
+}
+.hero .left{
+    background-image: url("https://www.simplysissom.com/wp-content/uploads/2017/01/yogurtpaqrfaits-copy.jpg");
     background-position: center;
     background-size: cover;
+}
+.hero .right{
+    background-image: url("https://cdn.usarestaurants.info/assets/uploads/ba536dbff05eb6b0039c43f6e5bcf2ed_-united-states-new-jersey-union-county-summit-709513-marigoldshtm.jpg");
+    background-position: center;
+    background-size: cover;
+   }
+ /* Inside Hero Containers*/ 
+.hero .herodiv .inner{
+    padding-top: 15%;
+    padding-left: 25px;
+    height: 80%;
+}
+/* Inside Upper */
+.hero .herodiv .inner .upper h1{
+    font-size: 80px;
+    text-shadow: 2px 2px white;
+}
+.hero .left h1{
+    color: black;
+}
+.hero .right h1{
+    color: orange;
+}
+/* Inside Lower */
+.hero .herodiv .inner .lower{
+    font-size: 25px;
+}
+.hero .herodiv .inner .lower ul{
+    list-style: none;
+}
+.hero .left li{
+    text-shadow: 1px 1px white;
+}
+.hero .right li{
+    color: white;
+    text-shadow: 1px 1px white;
+}
+#dinners{
+    height: 400px;
+    background-image: url("https://scontent-bos5-1.xx.fbcdn.net/v/t1.6435-9/115762502_2787722334805728_6429523412154009914_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=TpLQJlN5XL4AX_nkI6-&_nc_ht=scontent-bos5-1.xx&oh=00_AfAaKedWD-gV0RUYLQGZ4j4RmH9fPbA8RF3eIsHOI49WtQ&oe=64B92A01");
+    background-position: top right;
+    background-size: cover;
+    color: white;
+}
+#dinners .inner h1{
+    font-size: 65px;
+    text-shadow: 2px 2px orange;
+}
+#location{
+    background-color: rgb(250, 250, 250);
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+#location .left{
+    flex: 1;
+    text-align: center;
+}
+#location .left h1{
+    font-size: 30px;
+}
+#location .left li{
+    font-size: 18px;
+}
+#location .left ul{
+    margin-left: 10px;
+    list-style: none;
+}
+#location .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#location .right iframe{
+    flex: 1;
+    height: 250px;
 }
