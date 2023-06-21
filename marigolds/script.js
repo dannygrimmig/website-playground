@@ -7,3 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+var submitBtn = document.getElementById("emailsubmit");
+submitBtn.addEventListener("click", () => {
+    window.alert("Signed Up!");
+})
