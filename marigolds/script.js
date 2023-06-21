@@ -13,3 +13,4 @@ var submitBtn = document.getElementById("emailsubmit");
 submitBtn.addEventListener("click", () => {
     window.alert("Signed Up!");
 })
+
